@@ -13,14 +13,14 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #21325e;
+  background-color: #b3c5f1;
   color: #f0f0f0;
 }
 
 .about h2 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 80px;
-  color: #e9d35b;
+  color: #f8170f;
   height: 50px;
 }
 
@@ -31,7 +31,7 @@
 .prompt svg {
   font-size: 60px;
   margin: 5px;
-  color: white;
+  color: rgb(227, 135, 135);
 }
 
 .skills {

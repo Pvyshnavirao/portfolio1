@@ -1,27 +1,61 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Projects.css";
 import GithubIcon from "@material-ui/icons/GitHub";
 import { motion } from 'framer-motion';
+
 function Projects() {
-  return <motion.div
-  initial={{opacity:0}}
-  animate={{opacity:1}}
-  exit={{opacity:0}}>
-    <h1>
-      1.PORTFOLIO 
-    </h1>
-    <a
-            href="https://pvyshnavirao.github.io/Portfolio/homepage.html"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <GithubIcon /> Github link for the project 
-          </a>
-          <p>
-            Project Built to show case my skils , Background and Experience . <br></br>
-            Technologies Used : JavaScript , HTML , CSS
-          </p>
-  </motion.div>;
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
+      <h1> PROJECT 1</h1>
+      <img
+        src="data:image/jpeg;base64,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"
+        alt="Project Thumbnail"
+        className="thumbnail"
+        onClick={openModal}
+      />
+      <br />
+      <a
+        href="https://pvyshnavirao.github.io/Portfolio/homepage.html"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <GithubIcon /> Github link for the project
+      </a>
+      <p>
+      Click On The Image For More Project Information.
+      </p>
+      {/* Modal */}
+      {isModalOpen && (
+        <div className="modal-overlay" onClick={closeModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            {/* Your detailed project information goes here */}
+            <h2>Detailed Project Information</h2>
+            <p >  In this portfolio website, I've employed JavaScript, HTML, and CSS to
+        craft a dynamic showcase spotlighting my skills, projects, experience,
+        education, and a contact page. JavaScript adds interactivity, HTML
+        ensures seamless navigation, and CSS guarantees a visually appealing and
+        cohesive design. Together, these technologies create a powerful and
+        engaging platform, providing visitors with a concise yet comprehensive
+        insight into my professional journey.</p>
+          </div>
+        </div>
+      )}
+    </motion.div>
+  );
 }
 
 export default Projects;

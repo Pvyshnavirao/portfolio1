@@ -1,15 +1,16 @@
 import React from "react";
+import SlideShow from "../components/SlideShow";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import EmailIcon from "@material-ui/icons/Email";
 import GithubIcon from "@material-ui/icons/GitHub";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { motion } from 'framer-motion';
 import "../styles/Home.css";
-import SlideShow from "../components/SlideShow";
+
 
 function Home() {
   const [text] = useTypewriter({
-    words: ["Software Engineer", "Graduate Student"],
+    words: ["Innovative personal", "Graduate Student"],
     loop: {},
     typeSpeed: 80,
     deleteSpeed: 80,
@@ -25,6 +26,7 @@ function Home() {
     >
       <div className="about">
         <h2> Hi, My Name is Vyshnavi Rao P</h2>
+        <br></br>
         <div className="prompt">
           <p>
             A {text}
