@@ -27,20 +27,7 @@ function Experience() {
           <p>Bachelor's degree in computer science and engineering </p>
         </VerticalTimelineElement>
         
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="2021-2022"
-          iconStyle={{ background: "#e9d35b", color: "#bff" }}
-          icon={<WorkIcon />}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Wipro, Hyderabad, India
-          </h3>
-          <p>
-            Worked as an aFull Stack Developer for a period of 2 months  and had
-            hands on technologies
-          </p>
-        </VerticalTimelineElement>
+       
 
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
